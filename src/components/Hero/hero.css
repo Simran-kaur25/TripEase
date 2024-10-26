@@ -1,0 +1,91 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: #000000; /* Adjust background as needed */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.hero-content {
+  max-width: 50%;
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis for better responsiveness */
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff; /* Adjust color as needed */
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.hero-image {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis for better responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional for rounded corners */
+}
+
+
+.wave-header{
+  /* min-height: 100vh; */
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Allow content to use full width */
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .hero-title {
+    padding-top: 90px;
+    font-size: 2rem; /* Reduce title font size */
+  }
+
+  .hero-description {
+    font-size: 0.9rem; /* Reduce description font size */
+  }
+
+  .hero-image {
+    padding-top: 0px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem; /* Further reduce title font size */
+  }
+
+  .hero-description {
+    font-size: 0.8rem; /* Further reduce description font size */
+  }
+}
