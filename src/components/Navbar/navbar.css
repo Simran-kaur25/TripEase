@@ -3,18 +3,19 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 60px;
     padding: 20px 10%;
     display: flex;
-    justify-content: space-between;
-    background-color: #1f1f29;
+    justify-content: space-between; /* Align logo and navbar on opposite sides */
+    background-color: #133E87;
     align-items: center;
     z-index: 100;
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 16px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     text-decoration: none;
 }
 

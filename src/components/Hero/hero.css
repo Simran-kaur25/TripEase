@@ -15,13 +15,13 @@
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #fff; /* Adjust color as needed */
+  color: black; /* Adjust color as needed */
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: 1rem;
-  color: #fff;
+  color: black;
   line-height: 1.6;
 }
 
@@ -33,11 +33,6 @@
   padding-top: 90px;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Optional for rounded corners */
-}
 
 
 .wave-header{
@@ -53,7 +48,12 @@ svg{
   left: 0;
 }
 
-
+.bg-primary {
+  background-image: url('../../assets/travel-palnner.jpg'); /* Change the path accordingly */
+  background-size: cover; /* This will cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .hero {

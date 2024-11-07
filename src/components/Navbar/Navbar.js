@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/Logo.png'
 import './navbar.css';
 
 export const Navbar = () => {
@@ -10,13 +12,16 @@ export const Navbar = () => {
 
     return (
         <header className='header'>
-            <a href='/' className='logo'>Logo</a>
+            <a href='/' className='logo'>
+                <img src={logo} alt='Logo' width={150} height={150} />
+            </a>
             <nav className={`navbar ${isOpen ? 'active' : ''}`}>
-                <a href='/'>Home</a>
-                <a href='/'>About</a>
-                <a href='/'>Blogs</a>
-                <a href='/'>Services</a>
-                <a href='/'>Contact Us</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/features">Features</Link>
+                <Link to="/">Blogs</Link>
+                <Link to="/">Services</Link>
+                <Link to="/features">Contact Us</Link>
             </nav>
             <div className='hamburger' onClick={toggleMenu}>
                 <span></span>
